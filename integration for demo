@@ -1,0 +1,22 @@
+curl -s -X POST \
+  -H "Authorization: Bearer $REPLICATE_API_TOKEN" \
+  -H "Content-Type: application/json" \
+  -H "Prefer: wait" \
+  -d $'{
+    "version": "9b005fd3225f1483fead8e7d252d4058a3b1c961528cc95598b922fefc04f765",
+    "input": {
+      "model": "dev",
+      "go_fast": false,
+      "lora_scale": 1,
+      "megapixels": "1",
+      "num_outputs": 1,
+      "aspect_ratio": "1:1",
+      "output_format": "webp",
+      "guidance_scale": 3,
+      "output_quality": 80,
+      "prompt_strength": 0.8,
+      "extra_lora_scale": 1,
+      "num_inference_steps": 28
+    }
+  }' \
+  https://api.replicate.com/v1/predictions
