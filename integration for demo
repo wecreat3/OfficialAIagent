@@ -27,3 +27,6 @@ curl -s -X POST \
 // "model" : "dev" or "schnell" schnell for fast, basic generation, dev for more complex, better output
 // "go_fast" false for better image, true for faster generation
 // "output" png webp or jpg
+
+
+//version: anna: "1a31c0e42af7739e1117d3dfa525c71eb628df329a4ec9cdc9becd00807f6d3e"
