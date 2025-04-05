@@ -5,6 +5,7 @@ curl -s -X POST \
   -d $'{
     "version": "9b005fd3225f1483fead8e7d252d4058a3b1c961528cc95598b922fefc04f765",
     "input": {
+      "prmopt: "",
       "model": "dev",
       "go_fast": false,
       "lora_scale": 1,
@@ -20,3 +21,9 @@ curl -s -X POST \
     }
   }' \
   https://api.replicate.com/v1/predictions
+
+
+// fill the prompt with what the user input prompt, add the username at the end of the prompt
+// "model" : "dev" or "schnell" schnell for fast, basic generation, dev for more complex, better output
+// "go_fast" false for better image, true for faster generation
+// "output" png webp or jpg
